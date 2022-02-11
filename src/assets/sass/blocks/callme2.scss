@@ -1,0 +1,86 @@
+.callme2 {
+
+
+    padding: 4rem;
+
+    //box-shadow: $shadow;
+    //background-image: ;
+
+    @media(max-width: get-breakpoints("xl")) {
+        padding: 3rem 1rem;
+    }
+}
+
+.callme2__title {
+    font-weight: 400;
+}
+
+.callme2__subtitle {
+    font-weight: 300;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    margin: 1rem;
+    color: $black;
+
+    @media(max-width: get-breakpoints("xl")) {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}
+
+.callme2__link {
+
+}
+
+.callme2__form {
+    max-width: 700px;
+    margin: 2rem auto;
+
+    @media(max-width: get-breakpoints("xl")) {
+        display: none;
+    }
+}
+
+.callme2__subtext {
+    margin: 1rem;
+}
+
+.callme2__input {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    padding: 1rem;
+    margin-right: 1rem;
+
+    font-size: 2rem;
+    color: $black;
+
+    @media(max-width: get-breakpoints("xl")) {
+        padding: 0.4rem;
+        font-size: 1.4rem;
+    }
+}
+
+.callme2__btn {
+    padding: 1rem 1.6rem;
+    font-size: 2rem;
+    flex-basis: 60%;
+
+    @media(max-width: get-breakpoints("xl")) {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+
+        padding: 0.6rem 0.8rem;
+        font-size: 1.4rem;
+    }
+}
+
+.callme2__row {
+    display: flex;
+    flex-direction: row;
+    @media(max-width: get-breakpoints("xl")) {
+        display: none;
+    }
+}

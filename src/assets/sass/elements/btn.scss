@@ -1,0 +1,82 @@
+// .btn {
+//     display: inline-block;
+//     padding: 1rem 1.4rem;
+
+//     font-size: 1.2rem;
+//     font-weight: 400;
+
+//     text-align: center;
+//     text-decoration: none;
+//     border-radius: $radius;
+
+//     box-shadow: $btn-shadow;
+
+//     transition: all 0.2s ease-in-out;
+
+//     @media(max-width: get-breakpoints("xxl")) {
+//         padding: .8rem 1.2rem;
+//         font-size: 1rem;
+//     }
+
+//     &--primary {
+//         background-color: $green;
+//         border: 2px solid $green;
+        
+//         color: $white;
+
+//         &:hover {
+//             background-color: darken($green,5);
+//             border-color: darken($green,5);
+//             box-shadow: none;
+
+//             color: $white;
+//         }
+//     }
+
+//     &--alt {
+//         background-color: transparent;
+//         border: 2px solid $yellow;
+        
+//         color: $black;
+
+//         &:hover {
+//             background-color: $yellow;
+//             box-shadow: none;
+//         }
+//     }
+// }
+
+@mixin button-bg($bg,$txt) {
+    border: 2px solid $bg;
+    background: $bg;
+    color: $txt;
+    
+    &:hover {
+        border-color: darken($bg,8%);
+        background: darken($bg,8%);
+        color: $txt;
+        transition: all 0.3s ease;
+    }
+    &:active {
+        border-color: darken($bg,25%);
+        background: darken($bg,25%);
+        color: $txt;
+    } 
+}
+
+@mixin button-border($border,$txt,$txt-alt) {
+    border: 2px solid $border;
+    background-color: transparent;
+    color: $txt;
+    &:hover {
+        border-color:$border;
+        background-color:$border;
+        color: $txt-alt;
+        transition: all 0.3s ease;
+    }
+    &:active {
+        border-color:$border;
+        background-color:$border;
+        color: $txt-alt;
+    } 
+} 

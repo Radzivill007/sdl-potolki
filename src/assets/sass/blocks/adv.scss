@@ -1,0 +1,75 @@
+.adv {
+    position: relative;
+    height: 180px;
+
+    background-color: $gray-light;
+
+    @media(max-width: get-breakpoints("xl")) {
+        height: auto;
+    }
+}
+
+.adv__inner {
+    position: relative;
+}
+
+.adv__content {
+    padding: 2rem;
+
+    background-color: $white;
+    border-radius: $radius;
+
+    box-shadow: $shadow;
+
+    @media(min-width: get-breakpoints("xl")+1) {
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        transform: translateY(-50%);
+    }
+}
+
+.adv__item {
+    display: flex;
+    flex-direction: column;
+    
+
+    max-width: 290px;
+
+    margin: 0 auto;
+
+    @media(max-width: get-breakpoints("xl")) {
+        flex-direction: row;
+        margin: 1rem 0;
+    }
+}
+
+.adv__item-icon {
+    display: flex;
+    flex: 0 0 90px;
+    width: 90px;
+    height: 90px;
+
+    fill: $black;
+
+    @media(max-width: get-breakpoints("xl")) {
+        flex-direction: row;
+        flex: 0 0 60px;
+    }
+}
+
+.adv__item-text {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+
+    margin-top: 1rem;
+
+    @media(max-width: get-breakpoints("xl")) {
+        margin: 0 0 0 1rem;
+
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+}

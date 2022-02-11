@@ -1,0 +1,67 @@
+.price-desc {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    @media(max-width: get-breakpoints("xl")) {
+        display: none;
+    }
+}
+
+.price-desc__table {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.table__row {
+    border-bottom: 1px solid $black;
+    &--first {
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+
+        border-width: 2px;
+        vertical-align: middle;
+    }
+
+    &--last {
+        border-bottom: none;
+        border-top: 2px solid $black;
+        vertical-align: top;
+    }
+
+    
+}
+
+.table__cell {
+    width: 33%;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: inherit;
+
+    &:nth-child(1) {
+        font-weight: 400;
+        text-align: left;
+    }
+
+    &:nth-child(even) {
+        font-weight: 500;
+        background-color: $yellow;
+    }
+}
+
+.table__price-text {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-bottom: 2rem;
+
+    &--small {
+        font-weight: 300;
+    }
+}
+
+.price-desc__btn {
+    line-height: 1.6rem;
+    padding: 1rem;
+}
+

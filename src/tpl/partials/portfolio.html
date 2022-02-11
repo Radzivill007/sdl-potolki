@@ -1,0 +1,68 @@
+<section class="portfolio" id="portfolio">
+    <div class="portfolio__bg">
+        <div class="portfolio__arrows">
+            <a onclick="myGlide.go('<')" class="portfolio__arrow portfolio__arrow--left">
+                <svg class="portfolio__arrow-icon portfolio__arrow-icon--left">
+                    <use xlink:href="#arrow"></use> 
+                </svg>
+            </a>    
+            <a onclick="myGlide.go('>')" class="portfolio__arrow portfolio__arrow--right">
+                <svg class="portfolio__arrow-icon">
+                    <use xlink:href="#arrow"></use> 
+                </svg>
+            </a>    
+        </div>
+    </div>
+    <div class="container">
+        <div class="portfolio__inner">
+            <div class="title title--left  portfolio__title">
+                <h3 class="title__text">Наши работы</h3>
+                <hr class="title__decor">
+                <p class="title__subtext" id="pName"></p>
+            </div>
+            <div class="portfolio__glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="/assets/img/gostin-2.jpg" alt="" class="portfolio__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="/assets/img/kuhnya-1.jpg" alt="" class="portfolio__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="/assets/img/kuhnya-2.jpg" alt="" class="portfolio__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="/assets/img/vannaya-1.jpg" alt="" class="portfolio__img">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="portfolio__desc">
+                
+                <p class="portfolio__desc-text" id="pText">
+                </p>
+                <ul class="portfolio__desc-group">
+                    <li class="portfolio__desc-item">
+                        Помещение: <span class="desc-item__title" id="pArea"></span> 
+                    </li>
+                    <li class="portfolio__desc-item">
+                        Цена «под ключ»: <span class="desc-item__title" id="pPrice"></span>
+                    </li>
+                    <li class="portfolio__desc-item">
+                        Материал: <span class="desc-item__title" id="pMaterial"></span>
+                    </li>
+                    <li class="portfolio__desc-item">
+                        Фактура: <span class="desc-item__title" id="pFactura"></span> 
+                    </li>
+                    <li class="portfolio__desc-item">
+                        Освещение: <span class="desc-item__title" id="pLight"></span> 
+                    </li>
+                </ul>
+                <a onclick="ym(57674548, 'reachGoal', 'zamer');" class="btn btn--green portfolio__btn btn-zamer">Вызвать замерщика</a>
+                <a href="#popup:marquiz_5e679534f32ebd00444f1bbf" onclick="ym(57674548, 'reachGoal', 'quiz');" class="btn btn--yellow-alt portfolio__btn">Подобрать потолок</a>
+            </div>
+        </div>
+    </div>
+</section>

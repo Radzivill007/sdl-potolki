@@ -1,0 +1,75 @@
+.header {
+    position: relative;    
+    padding-top: 10%;
+    background: url('/assets/img/header-bg_sm.jpg');        
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+@media(min-width: 769px) {
+    .header {
+    position: relative; 
+    padding-top: 10%;
+    background: url('/assets/img/header-bg_md.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;  
+}
+}
+
+@media(min-width: 1367px) {
+    .header {
+    position: relative; 
+    padding-top: 10%;
+    background: url('/assets/img/header-bg_lg.jpg');  
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+} 
+}
+.header__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    background: $black;
+    z-index: -1;
+}
+
+.header__inner {
+    width: 60%;
+
+    @media(max-width: get-breakpoints("xl")) {
+        width: 100%;
+        padding: 0 1rem;
+        margin-top: 15%;
+    }
+}
+
+.header__title {
+    color: $white;
+    margin-bottom: 1rem;
+}
+
+.header__subtext {
+    margin-top: 0.8rem;
+    font-weight: 300;
+}
+
+.header__btn-group {
+    margin-top: 1.8rem;
+}
+
+.header__btn {
+    margin-right: 1.4rem;
+    color: $white;
+
+    @media(max-width: get-breakpoints("xl")) {
+        display: block;
+        margin: 1rem;
+    }
+}

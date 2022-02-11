@@ -1,0 +1,70 @@
+.title {
+    margin-bottom: 3rem;
+
+    @media(max-width: get-breakpoints("xl")) {
+        margin-bottom: 1rem;
+    }
+}
+
+.title--left {
+    text-align: left;
+
+    & .title__decor {
+        margin-left: 0;
+    }
+
+    @media(max-width: get-breakpoints("xl")) {
+        
+        text-align: center;
+        & .title__decor {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.title--center {
+    text-align: center;
+
+    & .title__decor {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.title__text {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.8rem;
+
+    @media(max-width: get-breakpoints("xl")) {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+}
+
+.title__subtext {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 2.6rem;
+
+    @media(max-width: get-breakpoints("xl")) {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+}
+
+.title__decor {
+    width: 200px;
+    height: 0.2rem;
+    margin: 0.8rem 0;
+
+    border: none;
+    background-color: $yellow;
+    color: $yellow;
+
+    @media(max-width: get-breakpoints("xl")) {
+        width: 100px;
+        margin: 0.4rem 0;
+    }
+}

@@ -1,0 +1,97 @@
+@import "vars";
+
+/* Reset */    
+@import "../../../node_modules/reset-css/sass/reset";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: $gray-light;
+
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: $black;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+
+    &:active, &:hover {
+        color: $black;
+    }
+}
+
+b {
+    font-weight: 400;
+}
+
+section {
+    height: auto;
+    padding: 2rem 0;
+
+    overflow: hidden;
+
+    @media(min-width: get-breakpoints("xl")+1) {
+        padding: 4rem 0;
+        min-height: 650px;
+    }
+
+    @media(min-width: get-breakpoints("xxl")+1) {
+        padding: 6rem 0;
+        min-height: 800px;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Bootstrap */
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/grid";
+
+
+/* My elements */
+@import "elements/title";
+@import "elements/btn";
+@import "elements/nav";
+
+/* Vendor */
+@import "vendor/glide";
+@import "vendor/hamburgers/hamburgers";
+
+/* Blocks */
+@import "blocks/popup";
+@import "blocks/buttons";
+@import "blocks/navbar";
+@import "blocks/header";
+@import "blocks/adv";
+@import "blocks/prices";
+@import "blocks/price-desc";
+@import "blocks/portfolio";
+@import "blocks/faq";
+@import "blocks/calc";
+@import "blocks/feedback";
+@import "blocks/aboutus";
+@import "blocks/sales";
+@import "blocks/callme";
+@import "blocks/callme2";
+@import "blocks/contacts";
+

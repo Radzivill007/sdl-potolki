@@ -1,0 +1,41 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration:none;
+    padding: 0.6rem 0.8rem;
+    border-radius: $radius;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    box-shadow: $shadow-btn;
+
+    &:hover, &:active {
+        box-shadow: none;
+    }
+}
+
+.btn--green {
+    @include button-bg($green,$white);
+}
+
+.btn--green-alt {
+    @include button-border($green,$black,$white);
+}
+
+.btn--blue {
+    @include button-bg($blue,$white);
+}
+
+.btn--blue-alt {
+    @include button-border($blue,$black,$white);
+}
+
+.btn--yellow {
+    @include button-bg($yellow-alt,$white);
+}
+
+.btn--yellow-alt {
+    @include button-border($yellow-alt,$black,$white);
+}

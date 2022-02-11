@@ -1,0 +1,63 @@
+.sales {
+    background-color: $yellow;
+
+    display: flex;
+    align-items: center;
+}
+
+.sales__inner {
+    @media(max-width: get-breakpoints("xl")) {
+        padding: 0 1rem;
+    }
+}
+
+.sales__decor {
+    background-color: $gray-light;
+    color: $gray-light;
+}
+
+.sales__item {  
+    max-width: 350px;
+    
+    margin: 0 auto;
+
+    border-radius: $radius;
+    background-color: $white;
+
+    overflow: hidden;
+
+    @media(max-width: get-breakpoints("xl")) {
+        margin-top: 1rem;
+    }
+}
+
+.sales__item-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sales__item-inner {
+    padding: 2rem;
+    @media(max-width: get-breakpoints("xl")) {
+        padding: 1rem;
+    }
+}
+
+.sales__item-title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.sales-text {
+    margin: 1rem 0;
+
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.sales__btn {
+    width: 100%;
+    font-size: 1.2rem;
+}

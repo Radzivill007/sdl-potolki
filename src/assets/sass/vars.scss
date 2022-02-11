@@ -1,0 +1,37 @@
+$white: #fff;
+$black: #444;
+$gray-light: #F8F9F9;
+$gray: #f0f0f0;
+$yellow: #F7DC6F;
+$yellow-alt: #f1c40f;
+$green: #1D8449;
+$blue: #6F8AF7;
+
+$shadow: 0px 6px 6px 3px rgba($black,0.2);
+$shadow-btn: 3px 3px 3px 0px rgba($black,0.2);
+
+$radius: 2px;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1440px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1380px
+);
+
+
+@function get-breakpoints($key: "md") {
+	@return map-get($grid-breakpoints, $key);
+}
+
+$grid-gutter-width: 0;

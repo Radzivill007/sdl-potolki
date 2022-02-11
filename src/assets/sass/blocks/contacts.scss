@@ -1,0 +1,38 @@
+.contacts {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.4rem;
+}
+
+.contacts__inner {
+    @media(max-width: get-breakpoints("xl")) {
+        padding: 1rem;
+    }
+}
+
+.contacts__list {
+    display: block;
+    line-height: 2.2rem;
+    margin: 2rem 0;
+}
+
+.contacts__list-item {
+    margin: 0.2rem 0;
+}
+
+.contacts__list-title {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.contacts__link {
+    font-weight: 400;
+}
+
+.contacts__map {
+    background-color: $white;
+    border: 6px solid $white;
+    border-radius: $radius;
+}

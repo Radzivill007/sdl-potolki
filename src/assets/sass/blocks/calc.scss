@@ -1,0 +1,185 @@
+.calc {
+	background-color: $gray-light;
+    padding-bottom: 0;
+}
+
+
+.calc__inner {
+	height: 100%;
+
+	@media(max-width: get-breakpoints("xl")) {
+        padding: 0 1rem;
+    }
+}
+
+.calc__row {
+	position: relative;
+
+	width: 100%;
+	height: 100%;
+	
+}
+
+.calc__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $white;
+	box-shadow: $shadow;
+
+	transform: translateX(-50%);
+
+	@media(max-width: get-breakpoints("xl")) {
+		display: none;
+    }
+}
+
+.calc__form {
+	display: block;
+	width: 100%;
+	max-width: 500px;
+	padding: 2rem;
+
+	border-radius: $radius;
+	color: $black;
+	
+	@media(max-width: get-breakpoints("xl")) {
+		padding: 1.4rem;
+		margin: 0 auto;
+
+		background-color: $white;
+		box-shadow: $shadow;
+	}
+	
+	@media(min-width: get-breakpoints("xxl")+1) {
+		padding: 4rem 2rem;
+    }
+}
+
+.calc__row {
+	margin: 1rem 0;
+	font-size: 1.4rem;
+
+	&--result {
+		padding-top: 1rem;
+
+		font-size: 1.6rem;
+	}
+
+	@media(max-width: get-breakpoints("xl")) {
+		font-size: 1rem;
+
+    }
+}
+
+.calc__form-title {
+	margin: 1rem 0 3rem 0;
+
+	font-weight: 400;
+	font-size: 2.6rem;
+	text-transform: uppercase;
+
+	@media(max-width: get-breakpoints("xl")) {
+		font-size: 1.8rem;
+		margin: 1rem 0 2rem 0;
+    }
+}
+
+.calc__form-label {
+	height: 100%;
+}
+
+.calc__form-input {
+	width: 100%;
+	height: 2rem;
+
+	border-radius: $radius;
+	border: 1px solid $black;
+
+	color: $black;
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.2rem;
+
+	@media(max-width: get-breakpoints("xl")) {
+        font-size: 1rem;
+    }
+}
+
+.calc__form-postfix {
+	height: 100%;
+
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.calc__form-select {
+	width: 100%;
+	height: 2rem;
+
+	border-radius: $radius;
+	border: 1px solid $black;
+
+	color: $black;
+	text-align: center;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+.calc__form-price {
+	font-weight: 400;
+	font-size: 1.8rem;
+
+	@media(max-width: get-breakpoints("xl")) {
+        font-size: 1.4rem;
+    }
+}
+
+.calc__link, .calc__btn {
+	display: block;
+	margin-top: 2rem;
+	margin-left: auto;
+	line-height: 1.6rem;
+	padding: 1rem;
+
+	&--alt{
+		@include button-border($white,$black,$black);
+	}
+}
+
+.calc__link {
+	margin-top: 2.5rem;
+	cursor: pointer;
+
+	@media(max-width: get-breakpoints("xl")) {
+		margin-top: 1rem;
+	}
+}
+
+.calc__desc {	
+	padding: 4rem;
+
+	@media(max-width: get-breakpoints("xl")) {
+		display: none;
+	}
+}
+
+.calc__desc-text {
+	margin-top: 1rem;
+	font-weight: 300;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	& b {
+		font-size: 1.4rem;
+		line-height: 1.8rem;
+	}
+}
+
+.calc__desc-link {
+	display: block;
+	margin-top: 0.6rem;
+	font-size: 1.4rem;
+	font-weight: 400;
+}

@@ -1,0 +1,79 @@
+.navbar {
+    position: fixed;
+    z-index: 10;
+
+    width: 100%;
+
+    border-bottom: 1px solid $gray-light;
+    background-color: $white;
+}
+
+.navbar__inner {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    padding: 0 1rem;
+}
+
+
+
+.navbar__logo-text {
+    margin: 0.3rem 0 0.3rem 1rem;
+    font-size: .9rem;
+
+    @media (max-width: get-breakpoints("xl")) {
+        display: none;
+    }
+}
+
+.navbar__nav {
+    font-size: 1rem;
+
+    @media(max-width: get-breakpoints("xl"))
+    {
+        padding: 1rem;
+        background-color: $white;
+    }
+
+    @media(min-width: get-breakpoints("xl")+1) {
+        margin-left: auto;
+    }
+}
+
+.navbar__link {
+    margin-right: 0 1rem 1rem 1rem;
+    color: $black;
+    font-size: 1.2rem;
+    &:active, &:hover {
+        color: $blue;
+    }
+}
+
+.navbar__link--phone {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    color: $blue;
+
+    @media(min-width: get-breakpoints("xl") + 1) {
+        margin-left: 1.4rem;
+        margin-top: 0;
+
+        font-size: 1.2rem;
+    }
+
+    &:hover {
+        color: $green;
+    }
+}
+
+.navbar__hamburger {
+    margin-left: auto;
+    outline: none;
+
+    @media(min-width: get-breakpoints("xl")+1) {
+        display: none;
+    }
+}

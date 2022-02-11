@@ -1,0 +1,63 @@
+.callme {
+    min-height: 300px;
+
+    padding: 4rem;
+
+    box-shadow: $shadow;
+    background-color: $gray-light;
+
+    @media(max-width: get-breakpoints("xl")) {
+        padding: 3rem 1rem;
+    }
+}
+
+.callme__title {
+    font-weight: 400;
+}
+
+.callme__link {
+    display: block;
+    margin: 2rem 0;
+
+    font-size: 3rem;
+
+    @media(max-width: get-breakpoints("xl")) {
+        font-size: 2rem;
+    }
+}
+
+.callme__form {
+    max-width: 700px;
+    margin: 2rem auto;
+}
+
+.callme__input {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    padding: 1rem;
+    margin-right: 1rem;
+    
+    font-size: 2rem;
+    color: $black;
+}
+
+.callme__btn {
+    padding: 1rem 1.6rem;
+    font-size: 2rem;
+    flex-basis: 60%;
+    @media(max-width: get-breakpoints("xl")) {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+.callme__row {
+    display: flex;
+    flex-direction: row;
+    @media(max-width: get-breakpoints("xl")) {
+        flex-direction: column;
+    }
+}

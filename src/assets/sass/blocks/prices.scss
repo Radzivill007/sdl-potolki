@@ -1,0 +1,114 @@
+.prices {
+    display: flex;
+    align-items: center;
+}
+
+.prices__title-sep {
+    margin: 0.6rem auto;
+}
+
+.prices__inner {
+    height: 100%;
+
+    @media(max-width: get-breakpoints("xl")) {
+        padding: 0 1rem;
+    }
+}
+
+.prices__item {
+    position: relative;
+
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+
+    background-color: $white;
+    border-radius: $radius;
+    box-shadow: $shadow;
+}
+
+.prices__btn {
+    display: block;
+    margin: 1rem 0;
+}
+
+.prices__link {
+    display: block;
+    width: 100%;
+
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.item__title {
+    font-size: 2.2rem;
+
+    @media(max-width: get-breakpoints("xl")) {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}
+
+.item__label {
+    position: absolute;
+    top: 1.6rem;
+    right: 2rem;
+    padding: 0.6rem;
+
+    background-color: $yellow-alt;
+    border-radius: $radius;
+
+    color: $white;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @media(max-width: get-breakpoints("xl")) { 
+        top: 1.4rem;
+        padding: 0.4rem 0.6;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+}
+
+.item__price {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    & b {
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+}
+
+.item__decor {
+    width: 100%;
+    margin: 1rem 0;
+
+    &--yellow {
+        background-color: $yellow;
+        color: $yellow;
+    }
+
+    &--blue {
+        background-color: $blue;
+        color: $blue;
+    }
+
+    &--green {
+        background-color: $green;
+        color: $green;
+    }
+}
+
+.item__desc-list {
+    display: block;
+}
+
+.item__desc {
+    display: block;
+    margin: 0.6rem 0;
+}

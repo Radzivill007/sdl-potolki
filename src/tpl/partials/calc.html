@@ -1,0 +1,108 @@
+<section class="calc" id="calc">
+    <div class="container">
+		<div class="calc__inner">
+			<div class="title title--center calc__title">
+				<h3 class="title__text ">Рассчитайте стоимость натяжного потолка</h3>
+				<hr class="title__decor">
+				<p class="title__subtext">И получите каждый 10-й м² в подарок!</p>
+			</div>
+			<div class="calc__row">
+			<div class="row">
+					<div class="calc__bg"></div>
+					<div class="col-12 col-xl-1"></div>
+					<div class="col-12 col-xl-5">
+						<form class="calc__form">
+							<h3 class="title calc__form-title">Калькулятор</h3>
+							<div class="calc__row">
+								<div class="row">
+									<div class="col-7">
+										<p class="calc__form-label">Введите площадь:</p>
+									</div>
+									<div class="col-3">
+										<input min="5" max="500" id="calcArea" type="number" class="calc__form-input">
+									</div>
+									<div class="col-2">
+										<p class="calc__form-postfix">м²</p>
+									</div>
+								</div>
+							</div>
+							<div class="calc__row">
+								<div class="row">
+									<div class="col-7">
+										<p class="calc__form-label">Кол-во светильников:</p>
+									</div>
+									<div class="col-3">
+										<input min="0" max="50" id="calcLight" type="number" class="calc__form-input">
+									</div>
+									<div class="col-2">
+										<p class="calc__form-postfix">шт</p>
+									</div>
+								</div>
+							</div>
+							<div class="calc__row">
+								<div class="row">
+									<div class="col-7">
+										<p class="calc__form-label">Фактура:</p>
+									</div>
+									<div class="col-5">
+										<select id="calcFactura" class="calc__form-select" name="">
+											<option class="calc__form-option" value="1">Глянец</option>
+											<option value="2">Матовый / Сатин</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="calc__row">
+								<div class="row">
+									<div class="col-7">
+										<p class="calc__form-label">Материал полотна:</p>
+									</div>
+									<div class="col-5">
+										<select id="calcMat" class="calc__form-select" name="" id="">
+											<option value="1">MSD Classic (пвх)</option>
+											<option value="2">MSD Premium (пвх)</option>
+											<option value="3">Ткань</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="calc__row calc__row--result">
+								<div class="row">
+									<div class="col-7">
+										<p class="calc__form-label">Цена под ключ:</p>
+									</div>
+									<div class="col-3">
+										<p class="calc__form-price" id="calcResult">-</p>
+									</div>
+									<div class="col-2">
+										<p class="calc__form-postfix">руб</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<a href="" class="btn-zamer btn btn--green calc__btn">Закажите бесплатный рассчет и получите каждый 10-й м² в подарок!</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				
+					<div class="col-12 col-xl-6">
+						<div class="calc__desc">
+							<p class="calc__desc-text">
+								<b>У конкурентов дешевле?</b><br />
+								Будьте внимательнее! Как правило компании посредники занижают цены для привлечения клиентов, а потом отдельно берут деньги за обвод труб, дополнительные углы, монтаж направляющих.
+							</p>
+							<p class="calc__desc-text">
+								<b>Что включенно в цену у нас </b><br />
+								Все работы по установке включенны 
+								в стоимость под ключ!<br>
+								<a class="calc__desc-link" href="#getPriceDesc">Что включенно в цену?</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</section>
